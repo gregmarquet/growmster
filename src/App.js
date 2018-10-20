@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Quiz from './components/Quiz/Quiz';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
           <h2>The app that will help you grow!</h2>
         </header>
         <div>
-        That's my body
+          <Quiz />
         </div>
       </div>
     );
