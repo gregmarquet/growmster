@@ -22,8 +22,8 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Growmster</h1>
-          <h2>The app that will help you grow!</h2>
+          <h1 className="header__title">Growmster</h1>
+          <h2 className="header__subtitle">The app that will help you grow!</h2>
         </header>
         <div>
           
