@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { value: 10}
+    this.state = { value: 0}
   }
 
   handleChange = (event) => {
