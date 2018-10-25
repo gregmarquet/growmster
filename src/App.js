@@ -9,14 +9,6 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { value: 0}
-  }
-
-  handleChange = (event) => {
-    const value = event.target.value
-    this.setState({
-      value: value
-    })
   }
   render() {
     return (
@@ -27,9 +19,7 @@ class App extends Component {
         </header>
         <div>
           
-          <Quiz 
-            value={this.state.value}
-            onValueChange={this.handleChange}/>
+          <Quiz />
         </div>
       </div>
     );
