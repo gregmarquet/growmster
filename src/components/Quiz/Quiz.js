@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InputRange from 'react-input-range';
 
+import SliderOption from '../SliderOption/SliderOption'
 import './Quiz.css'
 
 
@@ -11,7 +12,8 @@ class Quiz extends Component {
     this.state = { 
       values: {
         love: 0,
-        finance: 0
+        finance: 0,
+        career: 0
       }
     }
   }
@@ -48,6 +50,10 @@ class Quiz extends Component {
           value={this.state.values.finance}
           onChange={this.handleChange} />
 
+        <SliderOption 
+          name='career'
+          values={this.state.values}
+          handleChange={this.handleChange}/>
       </div>
     )
   }
