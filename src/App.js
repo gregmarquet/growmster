@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Quiz from './components/Quiz/Quiz';
+import Chart from './components/Chart/Chart';
 
 import './App.css';
 
@@ -10,12 +11,30 @@ class App extends Component {
     this.state = {
       quizDone: false
     }
+    this.values = {}
   }
+  
 
-  handleSubmit = () => {
+  handleSubmit = (newValues) => {
+    this.values = newValues
     const quizDone = true
     this.setState({ quizDone })
     console.log(this.state.quizDone)
+    console.log(this.values) 
+  }
+
+  renderQuiz = () => {
+    return (
+      <Quiz
+        handleSubmit={this.handleSubmit} />
+    )
+  }
+
+  renderResult = () => {
+    return (
+      <Chart
+        values={this.values} />
+    )
   }
 
   render() {
@@ -26,9 +45,10 @@ class App extends Component {
           <h2 className="header__subtitle">The app that will help you grow!</h2>
         </header>
         <div>
+          {this.state.quizDone ? this.renderResult() : this.renderQuiz()}
           
-          <Quiz 
-            handleSubmit= {this.handleSubmit}/>
+
+          
         </div>
       </div>
     );

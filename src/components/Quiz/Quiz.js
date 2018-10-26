@@ -75,7 +75,7 @@ class Quiz extends Component {
         <button
           className="submit"
           id="submit"
-          onClick={this.props.handleSubmit}
+          onClick={() => this.props.handleSubmit(this.state.values)}
         >Done</button>
       </div>
     )
