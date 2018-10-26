@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import InputRange from 'react-input-range';
 
 import SliderOption from '../SliderOption/SliderOption'
 import './Quiz.css'
@@ -13,7 +12,11 @@ class Quiz extends Component {
       values: {
         love: 0,
         finance: 0,
-        career: 0
+        career: 0,
+        contribution: 0,
+        relationships: 0,
+        fun: 0,
+        fitness: 0
       }
     }
   }
@@ -26,34 +29,54 @@ class Quiz extends Component {
     console.log(name, value)
     this.setState({ values })
   }
+
   render() {
     return (
       <div className="container">
         <div className="separation"></div>
         <p className="intro-text">Here are some areas of improvement, rate them from 0 to 10 based on how happy or unhappy you are in those areas compared to where you would like to be. </p>
         <div className="separation"></div>
-        <p className="area">Love: {this.state.values.love}</p>
-        <input
-          type="range"
-          min="0"
-          max="10"
-          name="love"
-          value={this.state.values.love}
-          onChange={this.handleChange} />
         
-        <p className="area">Finance: {this.state.values.finance}</p>
-        <input
-          type="range"
-          min="0"
-          max="10"
-          name="finance"
-          value={this.state.values.finance}
-          onChange={this.handleChange} />
+        <SliderOption
+          name='love'
+          values={this.state.values}
+          handleChange={this.handleChange} />
+
+        <SliderOption
+          name='finance'
+          values={this.state.values}
+          handleChange={this.handleChange} />
 
         <SliderOption 
           name='career'
           values={this.state.values}
           handleChange={this.handleChange}/>
+
+        <SliderOption
+          name='contribution'
+          values={this.state.values}
+          handleChange={this.handleChange} />
+
+        <SliderOption
+          name='relationships'
+          values={this.state.values}
+          handleChange={this.handleChange} />
+
+        <SliderOption
+          name='fun'
+          values={this.state.values}
+          handleChange={this.handleChange} />
+
+        <SliderOption
+          name='fitness'
+          values={this.state.values}
+          handleChange={this.handleChange} />
+
+        <button
+          className="submit"
+          id="submit"
+          onClick={this.props.handleSubmit}
+        >Done</button>
       </div>
     )
   }

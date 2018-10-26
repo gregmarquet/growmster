@@ -2,9 +2,9 @@ import React from 'react';
 
 function SliderOption(props) {
   return (
-    <div>
+    <div className="slider-option">
       <p className="area">
-        {`${props.name}: ${props.values[props.name]}`}
+        {`${props.name[0].toUpperCase()}${props.name.slice(1)}: ${props.values[props.name]}`}
       </p>
       <input
         type="range"
