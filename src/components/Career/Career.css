@@ -1,0 +1,16 @@
+img {
+  margin-right: 15px;
+}
+
+.area-container {
+  width: 800px;
+  margin: auto;
+  text-align: left;
+  /* padding-top: 10px; */
+}
+
+.area_title {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(107, 106, 106);
+  padding-bottom: 10px;
+}
