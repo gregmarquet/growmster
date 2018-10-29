@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Quiz from './components/Quiz/Quiz';
-import Chart from './components/Chart/Chart';
+import Result from './components/Result/Result';
 
 import './App.css';
 
@@ -32,7 +32,7 @@ class App extends Component {
 
   renderResult = () => {
     return (
-      <Chart
+      <Result
         values={this.values} />
     )
   }
