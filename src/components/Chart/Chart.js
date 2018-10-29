@@ -57,6 +57,9 @@ class Chart extends Component {
             ticks: {
               beginAtZero: true,
               max: 10
+            },
+            gridLines: {
+              color: ['#eee', '#eee', '#eee', '#eee', '#eee', '#ff0000', '#eee', '#eee', '#eee', '#eee']
             }
           }],
           xAxes: [{
