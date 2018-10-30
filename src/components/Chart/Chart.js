@@ -34,7 +34,7 @@ class Chart extends Component {
           "Finance",
           "Career",
           "Contribution",
-          "Relationship",
+          "Relationships",
           "Fun",
           "Fitness"
         ]
