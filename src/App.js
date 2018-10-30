@@ -13,7 +13,6 @@ class App extends Component {
     }
     this.values = {}
   }
-  
 
   handleSubmit = (newValues) => {
     this.values = newValues
