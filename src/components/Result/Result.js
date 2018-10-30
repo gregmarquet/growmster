@@ -6,6 +6,7 @@ import Finance from '../Finance/Finance'
 import Contribution from '../Contribution/Contribution'
 import Relationships from '../Relationships/Relationships'
 import Fun from '../Fun/Fun'
+import Fitness from '../Fitness/Fitness'
 
 class Result extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class Result extends Component {
         <Contribution />
         <Relationships />
         <Fun />
+        <Fitness />
       </div>
     )
   }
