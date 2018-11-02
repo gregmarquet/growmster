@@ -9,9 +9,6 @@ import Fun from '../Fun/Fun'
 import Fitness from '../Fitness/Fitness'
 
 class Result extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   componentDidMount() {
     window.scrollTo(0, 0)
