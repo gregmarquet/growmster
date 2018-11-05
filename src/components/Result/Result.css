@@ -1,0 +1,9 @@
+.result_intro {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 300;
+}

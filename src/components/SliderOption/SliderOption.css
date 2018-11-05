@@ -1,0 +1,91 @@
+input[type=range] {
+  -webkit-appearance: none;
+  width: 50%;
+  margin: 9.5px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 50%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(110, 110, 110, 0.5), 0px 0px 1px rgba(123, 123, 123, 0.5);
+  background: #B2BFCE;
+  border-radius: 1.3px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 3.2px 3.2px 3.2px #7c7c7d, 0px 0px 3.2px #89898a;
+  border: 0px solid #ffffff;
+  height: 29px;
+  width: 29px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #B2BFCE;
+}
+input[type=range]::-moz-range-track {
+  width: 50%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(110, 110, 110, 0.5), 0px 0px 1px rgba(123, 123, 123, 0.5);
+  background: #B2BFCE;
+  border-radius: 1.3px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 3.2px 3.2px 3.2px #7c7c7d, 0px 0px 3.2px #89898a;
+  border: 0px solid #ffffff;
+  height: 29px;
+  width: 29px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 50%;
+  height: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #B2BFCE;
+  border: 0px solid #000000;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px rgba(110, 110, 110, 0.5), 0px 0px 1px rgba(123, 123, 123, 0.5);
+}
+input[type=range]::-ms-fill-upper {
+  background: #B2BFCE;
+  border: 0px solid #000000;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px rgba(110, 110, 110, 0.5), 0px 0px 1px rgba(123, 123, 123, 0.5);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 3.2px 3.2px 3.2px #7c7c7d, 0px 0px 3.2px #89898a;
+  border: 0px solid #ffffff;
+  height: 29px;
+  width: 29px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 10px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #B2BFCE;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #B2BFCE;
+}
+
+@media only screen and (max-width: 600px) {
+    input[type=range] {
+      width: 70%;
+    }
+}

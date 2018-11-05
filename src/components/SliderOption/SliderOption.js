@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SliderOption.css';
+
 function SliderOption(props) {
   return (
     <div className="slider-option">

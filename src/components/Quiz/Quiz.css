@@ -1,6 +1,7 @@
 .intro-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
+  line-height: 1.4;
 }
 
 .separation {
@@ -10,28 +11,39 @@
 }
 
 .area {
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+.slider-option {
+  margin: 40px auto;
 }
 
 .submit {
-margin: 2rem;
+margin: 4rem;
 font-size: 1rem;
-width: 150px;
+width: 35%;
 color: #fff;
 text-transform: uppercase;
-background: #ed3330;
+background: #1E3C5D;
 padding: 20px;
 border-radius: 5px;
 display: inline-block;
 border: none;
+cursor: pointer;
 }
 
 .submit:hover {
-background: #434343;
+background: #52907D;
 letter-spacing: 1px;
 -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-transition: all 0.4s ease 0s;
+transition: all 0.2s ease 0s;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-text {
+      padding: 0 .3rem;
+    }
 }

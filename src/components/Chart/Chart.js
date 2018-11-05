@@ -56,7 +56,8 @@ class Chart extends Component {
           yAxes: [{
             ticks: {
               beginAtZero: true,
-              max: 10
+              max: 10,
+              fixedStepSize: 1
             },
             gridLines: {
               color: ['#eee', '#eee', '#eee', '#eee', '#eee', '#ff0000', '#eee', '#eee', '#eee', '#eee']
