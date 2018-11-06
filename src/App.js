@@ -18,8 +18,6 @@ class App extends Component {
     this.values = newValues
     const quizDone = true
     this.setState({ quizDone })
-    console.log(this.state.quizDone)
-    console.log(this.values) 
   }
 
   renderQuiz = () => {
