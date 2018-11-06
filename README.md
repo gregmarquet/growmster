@@ -1,4 +1,4 @@
-[Visit the app](https://gregmarquet-growmster.netlify.com/)
+[Visit Growmster online](https://gregmarquet-growmster.netlify.com/)
 
 # Growmster (Think Growth Master)
 ### I hope this app will help you grow
